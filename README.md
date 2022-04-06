@@ -6,12 +6,12 @@ This repository is my implementation (perhaps not very accurate but anyways) of 
 I'm not a professional java programmer and I'm not exactly a specialist in this stuff so there could be mistakes and inaccuracies basically anywhere, so be careful while using this repository.
 
 # Task
-*Text below was translated using google translate*
 The goal is to implement an algorithm for triangulating a 2 dimensional domain using the Delaunay method.
 <br>
 #### Initial data
 An area in the form of a curvilinear ring bounded by two closed flat polygons, each of which is defined by a sequence of segments.
-
+<br><br>
+*Note: task was translated using google translate*
 # Algorithm
 1. Generate array of points representing object described in [**Initial data**](#initial-data).
 2. Using that array we will generate every possible set of  points taken in threes.
