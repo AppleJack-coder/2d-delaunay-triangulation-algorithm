@@ -15,9 +15,7 @@ An area in the form of a curvilinear ring bounded by two closed flat polygons, e
 # Algorithm
 1. Generate array of points representing object described in [**Initial data**](#initial-data).
 <br>
-<p align="center">
-    <img src="images/initial_data_plot.png" alt="Initial data plot" width="800px">
-</p>
+![Initial data plot](images/initial_data_plot.png)
 2. Sort all points generated on  first step in one direction (in the direction of the x-axis).
 3. Take first 3 points. Check that there are no points inside the circle built on three points. If there are no points inside circle, then we can generate tree edges.
 4. If this is not first iteration, then we can check if generated so far edges are "good".
