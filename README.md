@@ -1,21 +1,22 @@
 # What is this repository about?
-This repository is my implementation (perhaps not very accurate but anyways) of delaunay triangulation algorithm for 2d.
-<br>
-<br>
+This repository is my implementation (perhaps not very accurate but anyways) of delaunay triangulation algorithm for 2d.  
+  
+  
 ### Note
 I'm not a professional java programmer and I'm not exactly a specialist in this stuff so there could be mistakes and inaccuracies basically anywhere, so be careful while using this repository.
 
 # Task
-The goal is to implement an algorithm for triangulating a 2 dimensional domain using the Delaunay method.
-<br>
+The goal is to implement an algorithm for triangulating a 2 dimensional domain using the Delaunay method.  
 #### Initial data
-An area in the form of a curvilinear ring bounded by two closed flat polygons, each of which is defined by a sequence of segments.
-<br><br>
+An area in the form of a curvilinear ring bounded by two closed flat polygons, each of which is defined by a sequence of segments.  
+  
+  
 *Note: task was translated using google translate*
 # Algorithm
-1. Generate array of points representing object described in [**Initial data**](#initial-data).
-<br>
-![Initial data plot](images/initial_data_plot.png)
+1. Generate array of points representing object described in [**Initial data**](#initial-data).  
+
+![Initial data plot](https://github.com/AppleJack-coder/2d-delaunay-triangulation-algorithm/blob/master/images/initial_data_plot.png)
+
 2. Sort all points generated on  first step in one direction (in the direction of the x-axis).
 3. Take first 3 points. Check that there are no points inside the circle built on three points. If there are no points inside circle, then we can generate tree edges.
 4. If this is not first iteration, then we can check if generated so far edges are "good".
