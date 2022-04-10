@@ -11,9 +11,9 @@ import java.util.Map;
 
 public class Plotting extends JPanel {
 
-    private Map<String, List<Float>> points_coords;
+    private double[][] points_coords;
 
-    public Plotting(Map<String, List<Float>> points_coords) {
+    public Plotting(double[][] points_coords) {
         this.points_coords = points_coords;
     }
 
@@ -22,17 +22,17 @@ public class Plotting extends JPanel {
         this.setBackground(Color.WHITE);
 
         g.setColor(Color.BLUE);
-        for (int i = 0; i < points_coords.get("x").size(); i++) {
+        for (int i = 0; i < points_coords.length; i++) {
             g.fillOval(
-                    Math.round(points_coords.get("x").get(i))+300,
-                    Math.round(points_coords.get("y").get(i))+300,
+                    (int)Math.round(points_coords[i][0])+300,
+                    (int)Math.round(points_coords[i][1])+300,
                     10,
                     10
             );
         }
     }
 
-    public static void plot(String plotName, Map<String, List<Float>> coords) {
+    public static void plotInitialFigure(String plotName, double[][] coords) {
         JFrame frame = new JFrame(plotName);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Plotting p = new Plotting(coords);
